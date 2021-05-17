@@ -43,7 +43,7 @@ namespace AppointmentScheduling.Services
                 };
 
                 _db.Appointments.Add(appointment);
-                await _db.SaveChangesAsync();
+                await _db.SaveChangesAsync(); // PROBLEM
                 return 2;
             }
         }
